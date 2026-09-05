@@ -1,0 +1,19 @@
+{
+  "replications": 500,
+  "type_i_error": 0.056,
+  "coverage_95": 0.944,
+  "type_i_mc_ci": [
+    0.035846472150018,
+    0.076153527849982
+  ],
+  "coverage_mc_ci": [
+    0.9238464721500179,
+    0.964153527849982
+  ],
+  "pass": true,
+  "phase": "P09_AA_QUALIFICATION",
+  "srm_known_examples_pass": true,
+  "stable_assignment_pass": true,
+  "jackknife_known_answer_pass": true,
+  "cuped_null_unbiased_pass": true
+}

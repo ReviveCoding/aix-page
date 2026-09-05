@@ -1,0 +1,7 @@
+mode: dev
+seed: 20260905
+model_rows: 250000
+experiment_sessions: 120000
+aa_replications: 200
+power_target: 0.85
+safety_free_gb: 50

@@ -1,0 +1,19 @@
+{
+  "selected_model": "M2_xgboost_cuda",
+  "selected_calibrator": "isotonic",
+  "selection_rule": "lowest validation weighted log loss; material threshold 0.0001; calibration chosen only on model_calibration",
+  "training_rows": {
+    "M1": 300000,
+    "M2": 2000000,
+    "M3": 1000000
+  },
+  "locked_test_rows": 500000,
+  "locked_test_open_count": 1,
+  "locked_metrics": {
+    "weighted_log_loss": 0.12712871060665845,
+    "weighted_brier": 0.0303506425691458,
+    "weighted_roc_auc": 0.7793912281058111,
+    "weighted_pr_auc": 0.1344602933347186,
+    "ece": 0.0007867824360491132
+  }
+}

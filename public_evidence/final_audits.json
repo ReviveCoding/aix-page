@@ -1,0 +1,51 @@
+{
+  "phase": "P19_FINAL_REVIEW",
+  "protocol_id": "KDDLOCK-58218173ab2542cb",
+  "science": {
+    "status": "PASS",
+    "checks": [
+      "official KDD semantics/provenance",
+      "v7 split and OOF leakage isolation",
+      "one-time model holdout",
+      "ITT/randomization/SRM at sim_user_id unit",
+      "500-replication A/A and pilot-based power",
+      "jackknife/CUPED/ANCOVA/bootstraps",
+      "Holm/BH and non-inferiority",
+      "factorial/HTE held-out evidence",
+      "policy 60/20/20 split, policy-level safety, IPS/SNIPS/DR",
+      "delayed oracle and frozen temporal candidate"
+    ],
+    "negative_result_preserved": "P6 underperformed the strongest safe baseline"
+  },
+  "engineering": {
+    "status": "PASS",
+    "checks": [
+      "Python 3.12",
+      "CUDA qualification",
+      "streaming ZIP ingestion",
+      "50 GiB storage floor",
+      "Parquet/DuckDB marts",
+      "Windows orchestration",
+      "deterministic checkpoints",
+      "package build and clean wheel import",
+      "31 tests, 93% package coverage, strict mypy, Ruff",
+      "all frozen inputs and outcome chunks replay-hash verified"
+    ]
+  },
+  "claims": {
+    "status": "PASS",
+    "checks": [
+      "all numerical claims mapped to artifacts",
+      "public/synthetic boundary explicit",
+      "no Google internal/experiment claim",
+      "no production deployment/revenue claim",
+      "no unsupported AIX superiority claim"
+    ]
+  },
+  "preserved_invalid_evidence": [
+    "artifacts/invalid/SYNQUAL-3668f963ad755c72",
+    "artifacts/invalid/KDDLOCK-f929648ebe42cf64"
+  ],
+  "aborted_preoutcome_identity": "artifacts/aborted_preoutcome/KDDLOCK-e3f70b43ebaa1c17",
+  "oracle_presentation_correction": "artifacts/locked/oracle_regret_correction.json"
+}

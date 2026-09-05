@@ -1,0 +1,22 @@
+status: FROZEN_IMMUTABLE
+protocol_id: KDDLOCK-58218173ab2542cb
+seed: 2026090527
+experiment_id: aix-page-v4-locked-replacement
+sample_size_total: 16977840
+sample_size_per_arm_target: 1414820
+partition_version: v7
+predictive_model: M2_xgboost_cuda
+calibrator: isotonic
+treatments:
+  format: [classic_text, rich_product, conversational_sponsored]
+  position: [top, inline]
+  density: [one, two]
+control: classic_text__top__one
+weeks: 6
+jackknife_buckets: 20
+locked_write_policy: create_only
+policy_locked_evaluation_max_rows: 1000000
+pre_specified_finalists:
+  - rich_product__top__one
+  - conversational_sponsored__inline__one
+  - classic_text__inline__one

@@ -1,0 +1,24 @@
+estimand: ITT
+primary_metric: advertiser_value_per_eligible_session
+alpha: 0.05
+primary_uncertainty: 20_bucket_user_jackknife
+multiplicity: holm
+exploratory_hte_multiplicity: bh_fdr
+policy_primary_estimator: doubly_robust
+policy_partitions: {discovery: 0.60, selection: 0.20, locked_test: 0.20}
+confirmatory_segments: [intent, relevance, query_frequency, user_status, prior_exposure]
+noninferiority:
+  user_utility_absolute: -0.015
+  abandonment_absolute: 0.010
+  organic_engagement_absolute: -0.015
+  low_relevance_exposure_absolute: 0.010
+  ad_density_absolute: 0.25
+practical_primary_relative_lift: 0.01
+confirmatory_finalists:
+  - rich_product__top__one
+  - conversational_sponsored__inline__one
+  - classic_text__inline__one
+temporal_candidate: rich_product__top__one
+bootstrap_replications: 300
+status: FROZEN_IMMUTABLE
+protocol_id: KDDLOCK-58218173ab2542cb

@@ -1,0 +1,13 @@
+{
+  "phase": "P15_POLICY_ANALYSIS",
+  "generated_at": "2026-09-05T18:35:43.183699+00:00",
+  "discovery_rows": 420000,
+  "selection_rows": 500000,
+  "best_safe_static": "conversational_sponsored__inline__one",
+  "global_ab_winner": "rich_product__top__two",
+  "frozen_aix_candidate": "P6_AIX_constrained",
+  "frozen_strongest_safe_non_aix": "P1_Best_safe_static",
+  "policy_locked_test_open_count": 1,
+  "thresholds_frozen": true,
+  "policy_locked_test_rows": 1000000
+}

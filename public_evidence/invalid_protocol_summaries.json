@@ -1,0 +1,23 @@
+[
+  {
+    "protocol_id": "SYNQUAL-3668f963ad755c72",
+    "classification": "INVALID_SCIENTIFIC_RESULT",
+    "reason": "Power used an assumed variance, outcomes preceded protocol identity, and policy-level guardrail OPE was missing.",
+    "effect_results_inspected": true,
+    "published_effects_claimable": false
+  },
+  {
+    "protocol_id": "KDDLOCK-f929648ebe42cf64",
+    "classification": "INVALID_SCIENTIFIC_RESULT",
+    "reason": "Tier-0 SRM used session counts instead of randomized users.",
+    "effect_results_inspected": false,
+    "published_effects_claimable": false
+  },
+  {
+    "protocol_id": "KDDLOCK-e3f70b43ebaa1c17",
+    "classification": "ABORTED_PRE_OUTCOME",
+    "reason": "Replacement identity retained a prior invalid-run seed and was abandoned before outcome generation.",
+    "effect_results_inspected": false,
+    "published_effects_claimable": false
+  }
+]

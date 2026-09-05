@@ -1,0 +1,212 @@
+{
+  "manifest_version": 1,
+  "valid_protocol": "KDDLOCK-58218173ab2542cb",
+  "preserved_invalid_protocols": [
+    "SYNQUAL-3668f963ad755c72",
+    "KDDLOCK-f929648ebe42cf64"
+  ],
+  "aborted_pre_outcome": "KDDLOCK-e3f70b43ebaa1c17",
+  "publication_boundary": "Compact aggregate evidence only; no KDD rows, experiment rows, databases, or model binaries.",
+  "files": [
+    {
+      "public_filename": "public_evidence/protocol_summary.json",
+      "source_local_artifact_path": "artifacts/locked/protocol_identity.json",
+      "source_sha256": "fdc82eab52e4e7fc95e15fd5de743dd9f08b7b7f0bf811e5236032cd94e632eb",
+      "public_sha256": "59a11ee0c7b78bdca5a39b713ec46c039dacfde1023a2b2f0cca188c8d563eb1",
+      "transformation": "summarized",
+      "claim_scope": "Frozen protocol identity, sample size, thresholds, and input hashes."
+    },
+    {
+      "public_filename": "public_evidence/data_summary.json",
+      "source_local_artifact_path": "artifacts/locked/data_quality.json",
+      "source_sha256": "a4dbb73df86d705f9e5e0b1f792d5ab658f52404abe5df3e5505203b7a169851",
+      "public_sha256": "da2caf8fb9e0fea2214d44ef46e481a9ba1932ff705e3d0de2038c80f40ac0b8",
+      "transformation": "redacted",
+      "claim_scope": "Aggregate KDD quality, scale, cardinality, and partition evidence; no rows."
+    },
+    {
+      "public_filename": "public_evidence/model_locked_metrics.json",
+      "source_local_artifact_path": "artifacts/locked/model_selection.json",
+      "source_sha256": "4408ec4cc3a92a4b01ea80631b9256a05778e6940cd0ccc03d077d3feb1f269f",
+      "public_sha256": "41e9075869c9a8aa229d432a85b0dae0170ac36f848e95f6ebc97bc2d288fa3d",
+      "transformation": "redacted",
+      "claim_scope": "Frozen model choice and one-time labeled locked-test metrics; model binaries excluded."
+    },
+    {
+      "public_filename": "public_evidence/power_summary.json",
+      "source_local_artifact_path": "artifacts/locked/power_analysis.json",
+      "source_sha256": "ef188ddcb21f55adf7c9377a649609f06db299f476ec6fa4846e720b05c460c5",
+      "public_sha256": "c2bdb7b54b186de6d03b48b3534ea413ef52dd909cf9364463e9c695c6c2b410",
+      "transformation": "summarized",
+      "claim_scope": "Qualification-only pilot moments and frozen power result; pilot rows excluded."
+    },
+    {
+      "public_filename": "public_evidence/trust_gate_summary.json",
+      "source_local_artifact_path": "artifacts/locked/trust_gate.json",
+      "source_sha256": "386b71a5fbcfda6207340e549ac2630874d10e10efdf7e309499ba10879a68cf",
+      "public_sha256": "a8432aa46c26580d99dcf7869a5cd2a6d72da5b09fa7c96feb3dcd36c1c9424c",
+      "transformation": "summarized",
+      "claim_scope": "Randomization-unit SRM and Tier-0 locked trust checks."
+    },
+    {
+      "public_filename": "public_evidence/model_benchmark.csv",
+      "source_local_artifact_path": "artifacts/locked/model_benchmark.csv",
+      "source_sha256": "b1a8fe26a268338ee9df04e5db2bcfcec83fd88c4f778373308b95cae3029e74",
+      "public_sha256": "b1a8fe26a268338ee9df04e5db2bcfcec83fd88c4f778373308b95cae3029e74",
+      "transformation": "copied",
+      "claim_scope": "Frozen validation comparison for M0-M3."
+    },
+    {
+      "public_filename": "public_evidence/calibration_metrics.csv",
+      "source_local_artifact_path": "artifacts/locked/calibration_metrics.csv",
+      "source_sha256": "27fe222a08cbaaaef33d00ae60067f12504231b0971932a79f02ae56f92b71cd",
+      "public_sha256": "27fe222a08cbaaaef33d00ae60067f12504231b0971932a79f02ae56f92b71cd",
+      "transformation": "copied",
+      "claim_scope": "Calibration-only model comparison."
+    },
+    {
+      "public_filename": "public_evidence/aa_validation_summary.json",
+      "source_local_artifact_path": "artifacts/locked/aa_validation.json",
+      "source_sha256": "076e594de53c18547480208aebec22023dfd946c788a8daef2449d465ada9e00",
+      "public_sha256": "076e594de53c18547480208aebec22023dfd946c788a8daef2449d465ada9e00",
+      "transformation": "copied",
+      "claim_scope": "Pre-lock 500-replication A/A qualification."
+    },
+    {
+      "public_filename": "public_evidence/primary_effects.csv",
+      "source_local_artifact_path": "artifacts/locked/primary_effects.csv",
+      "source_sha256": "c07af278836ddf9e8d084ef221583de4e1d8f670b284e66f4a38645f3b0860d0",
+      "public_sha256": "c07af278836ddf9e8d084ef221583de4e1d8f670b284e66f4a38645f3b0860d0",
+      "transformation": "copied",
+      "claim_scope": "Locked ITT treatment effects; controlled semi-synthetic outcomes."
+    },
+    {
+      "public_filename": "public_evidence/guardrail_effects.csv",
+      "source_local_artifact_path": "artifacts/locked/guardrail_effects.csv",
+      "source_sha256": "a0e9f412f73a3490587f23680ebe1390e3b33690e3e61f2caeac9de67b0356ef",
+      "public_sha256": "a0e9f412f73a3490587f23680ebe1390e3b33690e3e61f2caeac9de67b0356ef",
+      "transformation": "copied",
+      "claim_scope": "Locked whole-page guardrail inference; controlled semi-synthetic outcomes."
+    },
+    {
+      "public_filename": "public_evidence/factorial_effects.csv",
+      "source_local_artifact_path": "artifacts/locked/factorial_effects.csv",
+      "source_sha256": "84d33eda28e81a5981318f6c868cf37f6b8c31fa0e16a98c9947a4487f4dd019",
+      "public_sha256": "84d33eda28e81a5981318f6c868cf37f6b8c31fa0e16a98c9947a4487f4dd019",
+      "transformation": "copied",
+      "claim_scope": "Locked factorial inference; controlled semi-synthetic outcomes."
+    },
+    {
+      "public_filename": "public_evidence/segment_effects.csv",
+      "source_local_artifact_path": "artifacts/locked/segment_effects.csv",
+      "source_sha256": "85567b7f9f6aab0d924dbbb843503f30baf4930d72a95293b8437047d9275d2b",
+      "public_sha256": "85567b7f9f6aab0d924dbbb843503f30baf4930d72a95293b8437047d9275d2b",
+      "transformation": "copied",
+      "claim_scope": "Locked pre-specified segment inference."
+    },
+    {
+      "public_filename": "public_evidence/policy_values.csv",
+      "source_local_artifact_path": "artifacts/locked/policy_values.csv",
+      "source_sha256": "3bba55f0d6e2103070dc8e0c4bdfac2e60797f9173fd246b9c3eed15d7622613",
+      "public_sha256": "3bba55f0d6e2103070dc8e0c4bdfac2e60797f9173fd246b9c3eed15d7622613",
+      "transformation": "copied",
+      "claim_scope": "Locked policy OPE values on the policy holdout."
+    },
+    {
+      "public_filename": "public_evidence/policy_safety_summary.csv",
+      "source_local_artifact_path": "artifacts/locked/policy_safety_locked.csv",
+      "source_sha256": "ab4bf771b485de621b116902b8da853e5e93b8e18bd460dae1ff0998430bc9c5",
+      "public_sha256": "ab4bf771b485de621b116902b8da853e5e93b8e18bd460dae1ff0998430bc9c5",
+      "transformation": "copied",
+      "claim_scope": "Locked policy-level guardrail evidence."
+    },
+    {
+      "public_filename": "public_evidence/policy_regret.csv",
+      "source_local_artifact_path": "artifacts/locked/policy_regret.csv",
+      "source_sha256": "bb7027f98e79496f8504a1186700b08d313c5685a293cccda691c7bcf99940a8",
+      "public_sha256": "bb7027f98e79496f8504a1186700b08d313c5685a293cccda691c7bcf99940a8",
+      "transformation": "copied",
+      "claim_scope": "Delayed oracle policy regret diagnostics."
+    },
+    {
+      "public_filename": "public_evidence/temporal_stability.csv",
+      "source_local_artifact_path": "artifacts/locked/temporal_stability.csv",
+      "source_sha256": "53c50d778b1231de84ca5d58c3b104a5cd18c0e03d0cc49c6f054dc8d470132a",
+      "public_sha256": "53c50d778b1231de84ca5d58c3b104a5cd18c0e03d0cc49c6f054dc8d470132a",
+      "transformation": "copied",
+      "claim_scope": "Six-pseudo-week stability for the frozen finalist."
+    },
+    {
+      "public_filename": "public_evidence/sensitivity_analysis.csv",
+      "source_local_artifact_path": "artifacts/locked/sensitivity_analysis.csv",
+      "source_sha256": "782439f57eeacef99a17388f0a3afa7c48e08cdad0775150ce6bea297be225fa",
+      "public_sha256": "782439f57eeacef99a17388f0a3afa7c48e08cdad0775150ce6bea297be225fa",
+      "transformation": "copied",
+      "claim_scope": "Locked estimator sensitivity analysis."
+    },
+    {
+      "public_filename": "public_evidence/release_decision.json",
+      "source_local_artifact_path": "artifacts/locked/release_decision.json",
+      "source_sha256": "e82ab93002642c93a3f47cde1a5eaabde179b43cab80bfc9177c96dd5c690aa1",
+      "public_sha256": "e82ab93002642c93a3f47cde1a5eaabde179b43cab80bfc9177c96dd5c690aa1",
+      "transformation": "copied",
+      "claim_scope": "Final decision contract and policy comparison."
+    },
+    {
+      "public_filename": "public_evidence/oracle_summary.json",
+      "source_local_artifact_path": "artifacts/locked/oracle_summary.json",
+      "source_sha256": "65af3ab49162b90b75759c268e966bfc3904dffd6299a1d6daefd0ce8d59c1b1",
+      "public_sha256": "f66d1aff029d906e9709fb3590c059768bc418d01d1fb961cb426c64cd61c1a7",
+      "transformation": "summarized",
+      "claim_scope": "Delayed-oracle diagnostic summary."
+    },
+    {
+      "public_filename": "public_evidence/replay_verification.json",
+      "source_local_artifact_path": "artifacts/locked/replay_verification.json",
+      "source_sha256": "cb9cb291c39b8cf8790bc877a00cabeabfef5f7e36053ff20ded6102d16bb2cf",
+      "public_sha256": "19539da17525ece9c1b7d8b3313a12089ea1c65b649d26321dca48ccd4900b60",
+      "transformation": "summarized",
+      "claim_scope": "Frozen-input and outcome-hash replay checks."
+    },
+    {
+      "public_filename": "public_evidence/final_qa.json",
+      "source_local_artifact_path": "artifacts/qualification/final_qa_v4.json",
+      "source_sha256": "0f897fe4585ad3889494c93fb1482056bee953ad0486a56f4896629ca4885274",
+      "public_sha256": "bee5d68cb2becbc6715cea07f9a0e58d6ade055c9e016a1ea6eefc397e79c66b",
+      "transformation": "summarized",
+      "claim_scope": "Final local engineering QA summary."
+    },
+    {
+      "public_filename": "public_evidence/final_audits.json",
+      "source_local_artifact_path": "artifacts/qualification/final_audits_v4.json",
+      "source_sha256": "dd6d6778b48abd3a80a910e85c864983c5675c6a9254fbbc9d314a0697a016cd",
+      "public_sha256": "565d43cd6416c39034e64883032177f8df0d256c831c6f1b4c96fa73d0b0fd31",
+      "transformation": "summarized",
+      "claim_scope": "Science, engineering, and claims audits."
+    },
+    {
+      "public_filename": "public_evidence/invalid_protocol_summaries.json",
+      "source_local_artifact_path": "artifacts/invalid/KDDLOCK-f929648ebe42cf64/INVALIDATION.json",
+      "source_sha256": "6cf5d1d9885efa3c13257a7d0e3e348897a0829629a4cbf31d29ef0af151a06f",
+      "public_sha256": "67917227c17aa3cc93437674d3f60f05fe743bd42626786e3d4feeb08db2535d",
+      "transformation": "summarized",
+      "claim_scope": "Compact governance history only; invalid/aborted row-level evidence excluded."
+    },
+    {
+      "public_filename": "public_evidence/cate_validation_summary.csv.json",
+      "source_local_artifact_path": "artifacts/locked/cate_validation.csv",
+      "source_sha256": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6",
+      "public_sha256": "974690b0b62e1ffdd8571df168e511a42b856803c16224fcc8f53daf7e963fca",
+      "transformation": "summarized",
+      "claim_scope": "Explicit disclosure that the canonical CATE table contains no numerical rows."
+    },
+    {
+      "public_filename": "public_evidence/policy_selection_summary.json",
+      "source_local_artifact_path": "artifacts/locked/policy_selection_result.json",
+      "source_sha256": "99c3f785d2f94a710c8642f4b48c00ef350720c23e9ac120b78d619bab1e13b6",
+      "public_sha256": "113aefd2251599b20b70be8df0473bd3a8f14ef115b85041788567d8a4a34687",
+      "transformation": "summarized",
+      "claim_scope": "Frozen policy discovery/selection choices and one-time policy holdout open count."
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+mode: qualification
+seed: 20260905
+model_rows: 1000000
+experiment_sessions: 360000
+aa_replications: 500
+power_target: 0.85
+safety_free_gb: 50

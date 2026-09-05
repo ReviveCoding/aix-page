@@ -1,0 +1,26 @@
+{
+  "protocol_id": "KDDLOCK-58218173ab2542cb",
+  "status": "FROZEN_IMMUTABLE",
+  "created_at": "2026-09-05T18:27:48.895979+00:00",
+  "outcomes_existed_before_identity": false,
+  "sample_size_total": 16977840,
+  "sample_size_per_arm_target": 1414820,
+  "release_thresholds": {
+    "user_utility_absolute": -0.015,
+    "abandonment_absolute": 0.01,
+    "organic_engagement_absolute": -0.015,
+    "low_relevance_exposure_absolute": 0.01,
+    "ad_density_absolute": 0.25
+  },
+  "frozen_input_hashes": {
+    "source_tree_sha256": "8dedf59fbd902b9465dee215702070b02d058e5ed1715991ebb94f01fdcad117",
+    "data_manifest_sha256": "9a36d3ec89b0d04fb77c5e0c5d3ba60bc36aca2351aaee9a2de4cdfc0257e91c",
+    "experiment_context_sha256": "d15c549850a129bb9dc75a5c811185111bb9429cf8796ccf06f76ff59688356d",
+    "model_sha256": "142179162d5293239dd1dad7a14979cfc263a58a522782bc8b05e3c5c9c11d58",
+    "calibrator_sha256": "5cb48f0837d323da34711855cc0098cda49d1961931a858492d84d0f30e34d63",
+    "dgp_identity_sha256": "6f592852c70051f551369eff31ba52641b097ea747950f25da65e56ba4d05853",
+    "analysis_plan_sha256": "5d5f4353ec71e08e9ed74d42d01023ad95857e61c270968d0ed337acb7e82f23",
+    "locked_config_sha256": "6cb64b5c6826d69dfe0bdc6df1a5f44067ef735b99d20094daa3d7e022f48e5e",
+    "power_sha256": "ef188ddcb21f55adf7c9377a649609f06db299f476ec6fa4846e720b05c460c5"
+  }
+}

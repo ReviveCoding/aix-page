@@ -1,0 +1,20 @@
+{
+  "phase": "P19_FINAL_REVIEW",
+  "protocol_id": "KDDLOCK-58218173ab2542cb",
+  "checks": {
+    "data_manifest": true,
+    "experiment_context": true,
+    "model": true,
+    "calibrator": true,
+    "dgp": true,
+    "analysis_plan": true,
+    "locked_config": true,
+    "power": true,
+    "all_outcome_chunk_hashes": true,
+    "locked_row_count": true,
+    "trust_gate": true,
+    "release_decision_exists": true
+  },
+  "frozen_input_and_evidence_replay_pass": true,
+  "current_tree_hash_note": "The full working tree has post-lock reporting, mart, audit, and oracle-presentation correction additions. Frozen configs, DGP identity, data, model, calibrator, power, and every outcome chunk match protocol evidence."
+}

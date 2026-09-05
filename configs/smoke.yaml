@@ -1,0 +1,7 @@
+mode: smoke
+seed: 20260905
+model_rows: 50000
+experiment_sessions: 48000
+aa_replications: 120
+power_target: 0.80
+safety_free_gb: 50

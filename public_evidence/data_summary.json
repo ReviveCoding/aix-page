@@ -1,0 +1,30 @@
+{
+  "official_kdd": true,
+  "rows": 149639105,
+  "impressions": 235582879,
+  "clicks": 8217633,
+  "global_ctr": 0.03488213165100169,
+  "unique_ad_id": 641707,
+  "unique_advertiser_id": 14847,
+  "unique_display_url": 26273,
+  "unique_query_id": 24122076,
+  "unique_user_id": 22023547,
+  "anonymous_user_rate": 0.2521623742670741,
+  "role_counts": {
+    "model_train": 74821146,
+    "model_calibration": 14967173,
+    "model_validation": 14972703,
+    "model_locked_test": 14958454,
+    "challenge_pool": 7477386,
+    "experiment_context_pool": 22442243
+  },
+  "setting_groups_crossing_roles": 0,
+  "lookup_rows": {
+    "query": 26243606,
+    "keyword": 1249785,
+    "title": 4051441,
+    "description": 3171830,
+    "user_profile": 23669283
+  },
+  "pass": true
+}

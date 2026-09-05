@@ -1,0 +1,25 @@
+{
+  "srm": {
+    "phase": "P12_LOCKED_EXPERIMENT",
+    "protocol_id": "KDDLOCK-58218173ab2542cb",
+    "chi_square": 5.062669352692655,
+    "degrees_freedom": 11,
+    "randomization_unit": "sim_user_id",
+    "randomized_users": 5377461,
+    "p_value": 0.9280935870165441,
+    "threshold": 0.001,
+    "pass": true
+  },
+  "trust_gate": {
+    "phase": "P13_PRIMARY_ANALYSIS",
+    "protocol_id": "KDDLOCK-58218173ab2542cb",
+    "srm_pass": true,
+    "assignment_pass": true,
+    "pre_treatment_balance_max_raw_gap": 0.0008607305925962816,
+    "pre_treatment_balance_pass": true,
+    "cross_arm_contamination": 0,
+    "missing_outcomes": 0,
+    "abnormal_traffic_pass": true,
+    "pass": true
+  }
+}

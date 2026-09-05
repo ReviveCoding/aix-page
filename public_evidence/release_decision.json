@@ -1,0 +1,21 @@
+{
+  "phase": "P18_REPORTING",
+  "protocol_id": "KDDLOCK-58218173ab2542cb",
+  "decision": "ITERATE",
+  "trust_pass": true,
+  "best_safe_confirmatory_treatment": "rich_product__top__one",
+  "primary_effect": 0.0071254066348447,
+  "primary_relative_effect": 0.4089896025958672,
+  "primary_ci": [
+    0.006513215612455,
+    0.0077375976572345
+  ],
+  "frozen_aix_policy": "P6_AIX_constrained",
+  "strongest_safe_non_aix": "P1_Best_safe_static",
+  "aix_dr_value": 0.0179755621305662,
+  "baseline_dr_value": 0.0187104796552611,
+  "policy_relative_effect": -0.03927839041198779,
+  "aix_policy_guardrails_pass": true,
+  "temporal_stability_pass": true,
+  "boundary": "Public KDD context plus controlled semi-synthetic randomized outcomes; not Google or production traffic."
+}
