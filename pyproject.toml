@@ -38,6 +38,7 @@ ignore = ["E501"]
 python_version = "3.12"
 strict = true
 ignore_missing_imports = true
+mypy_path = "stubs"
 exclude = ["data/", "public_evidence/", "reports/"]
 
 [tool.coverage.run]
