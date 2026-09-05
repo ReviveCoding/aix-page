@@ -4,6 +4,9 @@
 
 **A reproducible research benchmark combining 149.6M public sponsored-search records, GPU CTR modeling, a 17.0M-session controlled semi-synthetic whole-page experiment, and policy-level safety evaluation.**
 
+[![CI](https://github.com/ReviveCoding/aix-page/actions/workflows/ci.yml/badge.svg)](https://github.com/ReviveCoding/aix-page/actions/workflows/ci.yml)
+[![Release](https://img.shields.io/github/v/release/ReviveCoding/aix-page?label=release)](https://github.com/ReviveCoding/aix-page/releases)
+
 | 149.6M | 235.6M | M2 | 0.1271 | 17.0M | **ITERATE** |
 |---:|---:|:---:|---:|---:|:---:|
 | public KDD rows | impressions | XGBoost CUDA winner | locked weighted log loss | controlled semi-synthetic sessions | final decision |

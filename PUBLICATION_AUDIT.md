@@ -3,7 +3,7 @@
 **PUBLICATION_AUDIT: PASS**
 
 - Total files: 102
-- Total bytes: 466,980
+- Total bytes: 466,999
 - Secret scan: PASS
 - Raw/row-level data scan: PASS
 - Absolute personal path scan: PASS
@@ -33,7 +33,7 @@
 | `public_evidence/policy_values.csv` | 8,686 | `3bba55f0d6e2103070dc8e0c4bdfac2e60797f9173fd246b9c3eed15d7622613` |
 | `src/aix_page/experimentation/inference.py` | 7,930 | `57051d0c4ec1a0eaf3cdd8bf7d9cd096bc578b6e62476f751b766b7197df4006` |
 | `scripts/ingest_kdd.py` | 7,455 | `b1e48a3134212c6955661ee30f2f99fa4e934ea2c8c5350723ede780745839e8` |
-| `README.md` | 6,706 | `41402c0f83b30460c7262aad8fe8fbacc0a59ff47c10db5bab20152973dd3a47` |
+| `README.md` | 7,000 | `b82446131fcc23f5ce0f9000b876e734ac03f3eba6b42cc445f0325f3310847a` |
 | `src/aix_page/simulator/observable_generator.py` | 6,527 | `cf4b5d32d38bde8387d81eafabdb6b24ffb4144ff244a025b85ada9277510c23` |
 | `src/aix_page/policy/learning.py` | 5,357 | `041ac6e89ed3cae9a3964611cbd3a2ef334b34f4679c3d8a17e91e1ae6f4dc36` |
 | `reports/technical_report.md` | 5,236 | `3fdfbb493042810152ccecb5f701b9d41c5497d1778d5ad273a5c03a3309a188` |
