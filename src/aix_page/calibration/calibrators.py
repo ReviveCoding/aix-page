@@ -19,10 +19,7 @@ def pseudo_rows(
 
 def _logit(probabilities: np.ndarray) -> np.ndarray:
     """Apply the historical probability clipping contract before taking log odds."""
-    return np.log(
-        np.clip(probabilities, 1e-8, 1 - 1e-8)
-        / np.clip(1 - probabilities, 1e-8, 1)
-    )
+    return np.log(np.clip(probabilities, 1e-8, 1 - 1e-8) / np.clip(1 - probabilities, 1e-8, 1))
 
 
 class Platt:
@@ -30,9 +27,7 @@ class Platt:
         self.model = LogisticRegression(C=1e6)
 
     def fit(self, click: np.ndarray, impression: np.ndarray, p: np.ndarray) -> Platt:
-        x, y, w = pseudo_rows(
-            click, impression, _logit(p)
-        )
+        x, y, w = pseudo_rows(click, impression, _logit(p))
         self.model.fit(x, y, sample_weight=w)
         return self
 
