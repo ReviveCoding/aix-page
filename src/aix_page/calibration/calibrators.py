@@ -19,7 +19,9 @@ def pseudo_rows(
 
 def _logit(probabilities: np.ndarray) -> np.ndarray:
     """Apply the historical probability clipping contract before taking log odds."""
-    return np.asarray(np.log(np.clip(probabilities, 1e-8, 1 - 1e-8) / np.clip(1 - probabilities, 1e-8, 1)))
+    return np.asarray(
+        np.log(np.clip(probabilities, 1e-8, 1 - 1e-8) / np.clip(1 - probabilities, 1e-8, 1))
+    )
 
 
 class Platt:
