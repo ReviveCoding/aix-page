@@ -7,10 +7,7 @@ from aix_page.calibration.calibrators import _logit, pseudo_rows
 
 def test_logit_reuses_exact_historical_clipping_formula():
     probabilities = np.array([0.0, 1e-9, 0.1, 0.5, 0.9, 1.0])
-    expected = np.log(
-        np.clip(probabilities, 1e-8, 1 - 1e-8)
-        / np.clip(1 - probabilities, 1e-8, 1)
-    )
+    expected = np.log(np.clip(probabilities, 1e-8, 1 - 1e-8) / np.clip(1 - probabilities, 1e-8, 1))
     np.testing.assert_array_equal(_logit(probabilities), expected)
 
 
