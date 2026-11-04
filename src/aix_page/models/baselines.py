@@ -25,12 +25,24 @@ def require_string_columns(frame: pd.DataFrame) -> list[str]:
 
 def records(frame: pd.DataFrame) -> list[dict[str, float]]:
     columns = require_string_columns(frame)
+    if not frame.columns.is_unique:
+        raise ValueError("Hashed-linear feature frames require unique column labels")
+    if frame.empty:
+        return []
     rows: list[dict[str, float]] = []
     history: list[str] = [column for column in columns if column.startswith("hist_")]
-    for _, row in frame.iterrows():
-        item: dict[str, float] = {f"{c}={int(row[c])}": 1.0 for c in FEATURE_COLUMNS}
-        item["normalized_position"] = float(row["normalized_position"])
-        item.update({c: float(row[c]) for c in history})
+    feature_count = len(FEATURE_COLUMNS)
+    required_columns = [*FEATURE_COLUMNS, "normalized_position", *history]
+    for values in frame[required_columns].itertuples(index=False, name=None):
+        item: dict[str, float] = {
+            f"{column}={int(value)}": 1.0
+            for column, value in zip(FEATURE_COLUMNS, values[:feature_count], strict=True)
+        }
+        item["normalized_position"] = float(values[feature_count])
+        item.update(
+            (column, float(value))
+            for column, value in zip(history, values[feature_count + 1 :], strict=True)
+        )
         rows.append(item)
     return rows
 
